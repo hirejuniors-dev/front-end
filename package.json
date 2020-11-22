@@ -13,6 +13,7 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@typeform/embed": "^0.27.1",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.8",
     "postcss-flexbugs-fixes": "^5.0.2",

@@ -1,15 +1,10 @@
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
+import Layout from '../components/Layout';
 
 export default function Home({ jobs }) {
   return (
-    <div className="contianer mx-auto">
-      <Head>
-        <title>Hire Juniors</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="px-64 pt-16">
+    <Layout title="Hire Juniors">
+      <main className="px-64">
         <h1 className="text-5xl text-center">Welcome to hirejuniors.dev</h1>
         <div className="my-4">
           <ul>
@@ -52,16 +47,16 @@ export default function Home({ jobs }) {
           </ul>
         </div>
       </main>
-    </div>
+    </Layout>
   );
 }
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const res = await fetch('https://hire-junior-devs.herokuapp.com/jobs');
+  const res = await fetch('http://localhost:1337/jobs');
   const jobs = await res.json();
-  console.log(jobs);
+  // console.log(jobs);
   return {
     props: { jobs },
   };
