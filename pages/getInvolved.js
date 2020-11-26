@@ -18,21 +18,19 @@ export default function GetInvolved() {
   }, [typeformRef]);
   return (
     <Layout title="Get Involved" isBottom={true}>
-      <h1 className="text-3xl">Get Involved</h1>
-      <div>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+      <h1 className="text-5xl text-center">Get Involved</h1>
+      <div className="mt-4 w-3/4 sm:w-1/2 mx-auto">
+        <p className="sm:text-lg">
+          Do you know a job opening for a junior role? Or did you come across
+          some useful resources that benefited you? Let's share it with the
+          community and help each other out. Fill out this Typeform below, and
+          we will list your resource/job opportunity on the website.{' '}
+          <span role="image" aria-label="slight smile emoji">
+            🙂
+          </span>
         </p>
       </div>
-      <div ref={typeformRef} style={{ height: '75vh', width: '100%' }}></div>
+      <div ref={typeformRef} style={{ height: '50vh', width: '100%' }}></div>
     </Layout>
   );
 }
