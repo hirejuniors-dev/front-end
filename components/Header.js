@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
+const Button = () => (
+  <Link href="/getInvolved">
+    <button className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-normal rounded-md bg-purplePrimary hover:bg-opacity-50 uppercase bg-opacity-30">
+      Get Involved
+    </button>
+  </Link>
+);
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,23 +48,31 @@ const Header = () => {
       <div
         className={`px-4 pb-2 ${
           isOpen ? 'block' : 'hidden'
-        } sm:flex sm:justify-between sm:p-0 sm:text-lg`}
+        } sm:flex sm:justify-center sm:p-0 sm:text-lg sm:items-center`}
       >
-        <Link href="/getInvolved">
-          <a className="block py-1 underline-anim underline-animate sm:ml-4">
-            Get Involved
-          </a>
-        </Link>
-        <Link href="/resources">
-          <a className="block py-1 underline-anim underline-animate sm:ml-4">
-            Resources
-          </a>
-        </Link>
-        <Link href="/about">
-          <a className="mt-1 block py-1 underline-anim underline-animate sm:mt-0 sm:ml-4">
-            About
-          </a>
-        </Link>
+        <div className="sm:flex sm:justify-between">
+          <Link href="/">
+            <a className="block py-1 underline-anim underline-animate sm:ml-4">
+              Home
+            </a>
+          </Link>
+          <Link href="/resources">
+            <a className="block py-1 underline-anim underline-animate sm:ml-4">
+              Resources
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="mt-1 block py-1 underline-anim underline-animate sm:mt-0 sm:ml-4">
+              About
+            </a>
+          </Link>
+          <div className="sm:hidden">
+            <Button />
+          </div>
+        </div>
+      </div>
+      <div className="hidden sm:block">
+        <Button />
       </div>
     </header>
   );

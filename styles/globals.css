@@ -3,3 +3,10 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+/* background gradient */
+
+body {
+    /* background: #D8F9FF; */
+    background:#EFFFF3;
+}
