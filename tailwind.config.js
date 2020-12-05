@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         purplePrimary: '#AF9BFF',
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   variants: {
