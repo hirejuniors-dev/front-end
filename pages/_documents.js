@@ -10,9 +10,9 @@ export default class extends Document {
           <script
             async
             defer
-            data-domain="hirejuniors.dev"
-            src="https://plausible.harshil.dev/js/plausible.js"
-          ></script>
+            data-domain={`hirejuniors.dev`}
+            src={`https://plausible.harshil.dev/js/plausible.js`}
+          />
         </Head>
         <body>
           <Main />
