@@ -1,30 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hire Juniors
 
-## Getting Started
+Looking for the first job in tech is not easy. Although there are a lot of openings out there is no central place where these postings are listed, especially for junior roles and internships. [hirejuniors.dev](https://hirejuniors.dev) is a website that aims to list all these opportunities for someone who is going to start their journey in tech. [hirejuniors.dev](https://hirejuniors.dev) aims to be a community-driven project. If you come across any job posting for a junior role or for an internship please fill-out the Typeform to get it listed.
 
-First, run the development server:
+The amount of content out there can overwhelm people who are just starting their journey. [hirejuniors.dev](https://hirejuniors.dev) aims to list all the useful resources that can help them. We will list all the useful resources that you found useful, and that you would recommend someone. If there are resources that benefited you please share them with the community.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Let us take a step to help and welcome junior developers on this amazing journey.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing 🚀
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+We love when people contribute to the project. Refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) to learn how you can get involved.
 
-## Learn More
+## Built With 💪
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/)
+- [Strapi](https://strapi.io/)
+- [n8n](https://n8n.io)
+- [Typeform](https://typeform.com)
