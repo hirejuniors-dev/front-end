@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         purplePrimary: '#AF9BFF',
+        backgroundSilk: 'cornsilk',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
