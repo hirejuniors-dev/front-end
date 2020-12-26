@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "algoliasearch": "^4.8.3",
     "next": "10.0.2",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-instantsearch-dom": "^6.8.2"
   },
   "devDependencies": {
     "@typeform/embed": "^0.27.1",

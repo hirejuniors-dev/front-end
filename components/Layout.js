@@ -14,8 +14,8 @@ export default function Layout({ title, children, isBottom }) {
       </Head>
       <Header />
       <div className="container mx-auto pt-8 sm:pt-16">{children}</div>
-      {/* <footer
-        className={`bottom-0 w-full border-t ${
+      <footer
+        className={`bottom-0 w-full border-t border-purple-600 bg-purplePrimary bg-opacity-50 ${
           isBottom ? 'absolute' : 'relative'
         } mt-4`}
       >
@@ -27,7 +27,7 @@ export default function Layout({ title, children, isBottom }) {
             </span>
           </p>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 }
