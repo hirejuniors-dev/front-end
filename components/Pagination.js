@@ -13,13 +13,15 @@ const Pagination = ({ currentRefinement, nbPages, refine, createURL }) => (
           <li key={index} className="">
             <a
               href={createURL(page)}
-              style={style}
               onClick={(event) => {
                 event.preventDefault();
                 refine(page);
               }}
             >
-              <span className="mr-1 sm:mr-2 text-xs sm:text-sm rounded py-1 px-2 sm:px-4 bg-white uppercase font-light text-purplePrimary">
+              <span
+                className="mr-1 sm:mr-2 text-xs sm:text-sm rounded py-1 px-2 sm:px-4 bg-white uppercase font-light text-purplePrimary"
+                style={style}
+              >
                 {page}
               </span>
             </a>

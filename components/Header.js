@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Button = () => (
   <Link href="/getInvolved">
-    <button className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-normal rounded-md bg-purplePrimary hover:bg-opacity-50 uppercase bg-opacity-30">
+    <button className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-normal rounded-md bg-purplePrimary hover:border-2 hover:border-purple-600 hover:bg-opacity-50 uppercase bg-opacity-30">
       Get Involved
     </button>
   </Link>

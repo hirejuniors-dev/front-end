@@ -13,7 +13,7 @@ const searchClient = algoliasearch(
 
 export default function Home() {
   return (
-    <Layout title="Hire Juniors" isBottom={true}>
+    <Layout title="Hire Juniors">
       <main className="px-4 sm:px-24">
         <div className="my-4">
           <InstantSearch
@@ -21,11 +21,11 @@ export default function Home() {
             searchClient={searchClient}
           >
             <Search />
-            <div className="grid grid-cols-3">
-              <div className="w-3/4">
+            <div className="sm:flex">
+              <div className="sm:w-1/4 sm:mr-4">
                 <Filter />
               </div>
-              <div className="col-span-2">
+              <div className="sm:w-3/4">
                 <Hits hitComponent={Hit} />
               </div>
             </div>
@@ -43,15 +43,4 @@ function Hit(props) {
       <Card job={props.hit} />
     </ul>
   );
-}
-
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
-  const res = await fetch('https://hire-juniors-cms.herokuapp.com/jobs');
-  const jobs = await res.json();
-  // console.log(jobs);
-  return {
-    props: { jobs },
-  };
 }

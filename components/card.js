@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export default function Card({ job }) {
-  console.log(job);
   const { URL, id, Company, Location, Position, Categories, Type } = job;
   return (
     <li key={id}>

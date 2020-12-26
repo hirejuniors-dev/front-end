@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Configure,
   connectRefinementList,
@@ -24,6 +25,7 @@ const RefinementList = ({ items, isFromSearch, refine, createURL }) => (
             event.preventDefault();
             refine(item.value);
           }}
+          className="text-xs sm:text-sm"
         >
           {isFromSearch ? (
             <Highlight attribute="label" hit={item} />
@@ -51,17 +53,31 @@ const Clear = connectCurrentRefinements(ClearRefinements);
 const Refinement = connectRefinementList(RefinementList);
 
 const Filter = () => {
+  const [show, setShow] = useState(false);
   return (
-    <div className="mb-8 p-4 sm:p-6 rounded-lg overflow-hidden shadow-lg bg-white h-auto">
-      <h2 className="text-xl uppercase text-gray-500 mb-2">Filters</h2>
-      <h3 className="uppercase text-gray-500 mb-1">Categories</h3>
-      <Refinement attribute="Categories" />
-      <h3 className="uppercase text-gray-500 mb-1">Type</h3>
-      <Refinement attribute="Type" />
-      <h3 className="uppercase text-gray-500 mb-1">Location</h3>
-      <Refinement attribute="Location" />
-      <Configure hitsPerPage={5} />
-      <Clear />
+    <div className="mb-8 px-4 py-1 md:p-6 rounded-lg overflow-hidden shadow-lg bg-white">
+      <div className="md:hidden">
+        <button
+          onClick={() => setShow(!show)}
+          className="text-lg sm:text-xl uppercase text-gray-500"
+          type="button"
+        >
+          Filters
+        </button>
+      </div>
+      <h2 className="text-lg sm:text-xl uppercase text-gray-500 mb-2 hidden md:block">
+        Filters
+      </h2>
+      <div className={show ? `h-auto` : `h-0 md:h-auto`}>
+        <h3 className="text-sm uppercase text-gray-500 mb-1">Categories</h3>
+        <Refinement attribute="Categories" />
+        <h3 className="text-sm uppercase text-gray-500 mb-1">Type</h3>
+        <Refinement attribute="Type" />
+        <h3 className="text-sm uppercase text-gray-500 mb-1">Location</h3>
+        <Refinement attribute="Location" />
+        <Configure hitsPerPage={5} />
+        <Clear />
+      </div>
     </div>
   );
 };
