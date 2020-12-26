@@ -17,7 +17,7 @@ export default function Home() {
       <main className="px-4 sm:px-24">
         <div className="my-4">
           <InstantSearch
-            indexName="development_jobs"
+            indexName="production_jobs"
             searchClient={searchClient}
           >
             <Search />
