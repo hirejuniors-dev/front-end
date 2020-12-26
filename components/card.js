@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
 export default function Card({ job }) {
+  console.log(job);
   const { URL, id, Company, Location, Position, Categories, Type } = job;
   return (
     <li key={id}>
       <Link href={URL} passHref>
         <a target="_blank">
-          <div className="mt-8 p-4 sm:p-6 rounded-lg overflow-hidden shadow-lg bg-white h-auto">
+          <div className="mb-8 p-4 sm:p-6 rounded-lg overflow-hidden shadow-lg bg-white h-auto">
             <div className="sm:flex sm:justify-between">
               <h3 className="text-lg sm:text-2xl max-w-md font-inter">
                 {Position}{' '}
