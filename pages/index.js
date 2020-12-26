@@ -21,11 +21,13 @@ export default function Home() {
             searchClient={searchClient}
           >
             <Search />
-            <div className="sm:flex">
-              <div className="sm:w-1/4 sm:mr-4">
-                <Filter />
+            <div className="block md:flex">
+              <div className="w-full sticky top-32 md:w-1/4 md:mr-4">
+                <div className="md:sticky md:top-36">
+                  <Filter />
+                </div>
               </div>
-              <div className="sm:w-3/4">
+              <div className="md:w-3/4">
                 <Hits hitComponent={Hit} />
               </div>
             </div>

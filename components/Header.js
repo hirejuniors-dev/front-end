@@ -16,7 +16,7 @@ const Header = () => {
     setIsOpen((previous) => !previous);
   };
   return (
-    <header className="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2">
+    <header className="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 sticky top-0 bg-backgroundSilk">
       <div className="flex items-center justify-between px-4 py-2 sm:p-0">
         <div>
           <Link href="/">
