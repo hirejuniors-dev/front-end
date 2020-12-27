@@ -13,31 +13,6 @@ export default function Layout({ children, isBottom }) {
           rel="stylesheet"
         />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <meta name="title" content="Hire Juniors" />
-        <meta
-          name="description"
-          content="A website to help you find your first job in tech!"
-        />
-
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hirejuniors.dev" />
-        <meta property="og:title" content="Hire Juniors" />
-        <meta
-          property="og:description"
-          content="A website to help you find your first job in tech!"
-        />
-        <meta property="og:image" content="/social.png" />
-
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://hirejuniors.dev/" />
-        <meta property="twitter:title" content="Hire Juniors" />
-        <meta
-          property="twitter:description"
-          content="A website to help you find your first job in tech!"
-        />
-        <meta property="twitter:image" content="/social.png" />
       </Head>
       <Header />
       <div className="container mx-auto pt-8 sm:pt-16">{children}</div>
@@ -60,11 +35,11 @@ export default function Layout({ children, isBottom }) {
             <li>
               <Link href="/getInvolved">Get Involved</Link>
             </li>
-            <li className="mt-4">
+            <li className="mt-2 md:mt-4">
               <a
                 href="https://www.buymeacoffee.com/harshil1712"
                 target="_blank"
-                className="py-4 p-2 rounded-lg text-white bg-purplePrimary hover:bg-purplePrimary hover:bg-opacity-50 shadow-md text-sm"
+                className="p-2 md:py-4 md:p-2 rounded-lg text-white bg-purplePrimary hover:bg-purplePrimary hover:bg-opacity-50 shadow-md text-sm"
               >
                 <span aria-label="coffee" role="image">
                   ☕

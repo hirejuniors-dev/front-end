@@ -24,7 +24,8 @@ const Header = () => {
             <div className="w-16 h-16">
               <Image
                 className="cursor-pointer"
-                src="/favicon.png"
+                src="/logo.png"
+                alt="logo"
                 width={48}
                 height={48}
               />
@@ -35,7 +36,7 @@ const Header = () => {
         <div>
           <button
             type="button"
-            className="text-primary focus:text-gray-800 hover:text-primary sm:hidden"
+            className="text-primary text-purplePrimary focus:text-gray-800 hover:text-primary sm:hidden"
             onClick={handleClick}
           >
             <svg

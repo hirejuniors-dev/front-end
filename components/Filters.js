@@ -59,11 +59,11 @@ const Filter = () => {
       <div className="md:hidden  w-full bg-backgroundSilk">
         <button
           onClick={() => setShow(!show)}
-          className="flex items-center text-sm uppercase text-gray-500 justify-start"
+          className="flex items-center text-sm uppercase text-gray-500 justify-start pb-2 bg-whiteSmoke w-full"
           type="button"
         >
           <p>Filters</p>
-          <span className="pl-2 text-gray-200">
+          <span className="pl-2 text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

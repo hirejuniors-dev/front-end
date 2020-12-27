@@ -22,7 +22,7 @@ export default function Home() {
           >
             <Search />
             <div className="block md:flex">
-              <div className="w-full sticky top-32 md:w-1/4 md:mr-4">
+              <div className="w-full sticky top-36 md:w-1/4 md:mr-4">
                 <div className="md:sticky md:top-44">
                   <Filter />
                 </div>
