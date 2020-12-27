@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Resources({ resources }) {
   return (
     <Layout title="Resources" isBottom={true}>
-      <h1 className="text-5xl text-center">Resources</h1>
+      <h1 className="text-5xl text-center uppercase">Resources</h1>
       <h2 className="mt-4 text-3xl text-center">Coming Soon!</h2>
       {/* <ul>
         {resources.map((resource) => {

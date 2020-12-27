@@ -82,7 +82,7 @@ const Filter = () => {
         </button>
       </div>
       <div className="mb-8 px-4 md:py-1 md:p-6 rounded-lg overflow-hidden shadow-lg bg-white">
-        <h2 className="text-lg sm:text-xl uppercase text-gray-500 mb-2 hidden md:block">
+        <h2 className="text-lg pt-2 sm:text-xl uppercase text-gray-500 mb-2 hidden md:block">
           Filters
         </h2>
         <div className={show ? `h-auto` : `h-0 md:h-auto`}>

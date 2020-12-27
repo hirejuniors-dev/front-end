@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         purplePrimary: '#AF9BFF',
-        backgroundSilk: 'cornsilk',
+        whiteSmoke: 'whitesmoke',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Button = () => (
   <Link href="/getInvolved">
@@ -16,12 +17,19 @@ const Header = () => {
     setIsOpen((previous) => !previous);
   };
   return (
-    <header className="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 sticky top-0 bg-backgroundSilk">
+    <header className="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 sticky top-0 bg-whiteSmoke">
       <div className="flex items-center justify-between px-4 py-2 sm:p-0">
         <div>
           <Link href="/">
-            {/* <Image className="h-16 cursor-pointer" src="/logo.png" unsized /> */}
-            <h1>hirejuniors.dev</h1>
+            <div className="w-16 h-16">
+              <Image
+                className="cursor-pointer"
+                src="/favicon.png"
+                width={48}
+                height={48}
+              />
+            </div>
+            {/* <h1>hirejuniors.dev</h1> */}
           </Link>
         </div>
         <div>
@@ -50,7 +58,7 @@ const Header = () => {
           isOpen ? 'block' : 'hidden'
         } sm:flex sm:justify-center sm:p-0 sm:text-lg sm:items-center`}
       >
-        <div className="sm:flex sm:justify-between">
+        <div className="sm:flex sm:justify-between uppercase">
           <Link href="/">
             <a className="block py-1 underline-anim underline-animate sm:ml-4">
               Home
