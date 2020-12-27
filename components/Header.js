@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Button = () => (
   <Link href="/getInvolved">
@@ -22,9 +21,9 @@ const Header = () => {
         <div>
           <Link href="/">
             <div className="w-16 h-16">
-              <Image
+              <img
                 className="cursor-pointer"
-                src="https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/logo.png"
+                src="/logo.png"
                 alt="logo"
                 width={48}
                 height={48}
