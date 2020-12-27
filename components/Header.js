@@ -24,7 +24,7 @@ const Header = () => {
             <div className="w-16 h-16">
               <Image
                 className="cursor-pointer"
-                src="/logo.png"
+                src="https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/logo.png"
                 alt="logo"
                 width={48}
                 height={48}
