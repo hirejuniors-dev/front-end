@@ -1,27 +1,23 @@
 import Layout from '../components/Layout';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Resources({ resources }) {
-  const dev =
-    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/dev.png';
-  const web =
-    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/web.png';
-  const cloud =
-    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/cloud.png';
-  const mobile =
-    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/mobile.png';
-  const security =
-    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/security.png';
+  const images = [
+    '/dev.png',
+    '/web.png',
+    '/cloud.png',
+    '/mobile.png',
+    '/security.png',
+  ];
   const checkForImage = (Category) => {
     if (
       Category === 'WebDevelopment' ||
       Category === 'Frontend' ||
       Category === 'Backend'
     ) {
-      return web;
+      return images[1];
     }
-    return dev;
+    return images[0];
   };
   return (
     <Layout title="Resources" isBottom={false}>
@@ -37,7 +33,7 @@ export default function Resources({ resources }) {
                     <div className="mb-8 p-4 rounded-lg overflow-hidden shadow-lg bg-white h-auto">
                       <div className="flex">
                         <div className="flex-none">
-                          <Image
+                          <img
                             src={`${checkForImage(Category)}`}
                             width={102}
                             height={102}
