@@ -3,16 +3,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Resources({ resources }) {
-  const images = ['/web.png', '/dev.png'];
+  const dev =
+    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/dev.png';
+  const web =
+    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/web.png';
+  const cloud =
+    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/cloud.png';
+  const mobile =
+    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/mobile.png';
+  const security =
+    'https://raw.githubusercontent.com/hirejuniors-dev/front-end/main/public/security.png';
   const checkForImage = (Category) => {
     if (
       Category === 'WebDevelopment' ||
       Category === 'Frontend' ||
       Category === 'Backend'
     ) {
-      return images[0];
+      return web;
     }
-    return images[1];
+    return dev;
   };
   return (
     <Layout title="Resources" isBottom={false}>
