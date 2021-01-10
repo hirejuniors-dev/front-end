@@ -1,7 +1,7 @@
 import { connectSearchBox } from 'react-instantsearch-dom';
 
 const SearchBox = ({ currentRefinement, isSearchStalled, refine }) => (
-  <div className="sticky top-20">
+  <div className="sticky top-20 z-20 bg-whiteSmoke md:-mx-2 md:px-2">
     <form noValidate action="" role="searct" className="mb-8">
       <div className="relative text-gray-600">
         <span className="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-300">
