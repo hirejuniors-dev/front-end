@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function GetInvolved() {
   return (
-    <Layout title="Get Involved" isBottom={true}>
+    <Layout title="Get Involved">
       <h1 className="text-5xl text-center uppercase">Get Involved</h1>
       <div className="mt-4 w-3/4 sm:w-1/2 mx-auto">
         <p className="sm:text-lg">

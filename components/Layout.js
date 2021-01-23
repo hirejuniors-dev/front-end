@@ -2,9 +2,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from './Header';
 
-export default function Layout({ children, isBottom }) {
+export default function Layout({ children }) {
   return (
     <>
+    <div className="flex flex-col min-h-screen ">
       <Head>
         <title>Hire Juniors</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,11 +16,9 @@ export default function Layout({ children, isBottom }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </Head>
       <Header />
-      <div className="container mx-auto pt-8 sm:pt-16">{children}</div>
+      <div className="container flex-grow mx-auto pt-8 sm:pt-16">{children}</div>
       <footer
-        className={`bottom-0 w-full bg-purplePrimary bg-opacity-30 ${
-          isBottom ? 'absolute' : 'relative'
-        } mt-4`}
+        className={`bottom-0 w-full bg-purplePrimary bg-opacity-30 relative mt-4`}
       >
         <div className="flex justify-between pt-6 px-12 text-md">
           <ul className="text-purplePrimary">
@@ -89,6 +88,7 @@ export default function Layout({ children, isBottom }) {
           </a>
         </div>
       </footer>
+      </div>
     </>
   );
 }
