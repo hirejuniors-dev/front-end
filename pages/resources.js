@@ -20,7 +20,7 @@ export default function Resources({ resources }) {
     return images[0];
   };
   return (
-    <Layout title="Resources" isBottom={false}>
+    <Layout title="Resources">
       <main className="px-4 min-h-screen">
         <h1 className="text-5xl text-center uppercase">Resources</h1>
         <div className="mt-6 grid sm:grid-cols-3 gap-3">

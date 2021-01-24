@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 export default function About() {
   return (
-    <Layout title="About" isBottom={true}>
+    <Layout title="About">
       <h1 className="text-5xl text-center uppercase">About</h1>
       <div className="mt-4 w-3/4 sm:w-1/2 mx-auto text-justify">
         <p className="text-lg">
