@@ -1,12 +1,12 @@
-import { connectPagination } from 'react-instantsearch-dom';
+import { connectPagination } from "react-instantsearch-dom";
 
 const Pagination = ({ currentRefinement, nbPages, refine, createURL }) => (
-  <div className="text-center">
+  <div className="text-center overflow-x-scroll py-3">
     <ul className="inline-flex">
       {new Array(nbPages).fill(null).map((_, index) => {
         const page = index + 1;
         const style = {
-          fontWeight: currentRefinement === page ? 'bold' : '',
+          fontWeight: currentRefinement === page ? "bold" : "",
         };
 
         return (
