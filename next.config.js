@@ -3,6 +3,6 @@
 module.exports = {
 	// target: 'serverless',
 	images: {
-		domains: ['raw.githubusercontent.com'],
+		domains: ['raw.githubusercontent.com', 'v5.airtableusercontent.com'],
 	},
 };
