@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.7.3",
     "@types/node": "20.9.2",
     "@types/react": "18.2.37",
     "autoprefixer": "^10.4.16",
