@@ -1,4 +1,4 @@
-const URL = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Jobs`;
+const URL = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Jobs?fields%5B%5D=Role&fields%5B%5D=Location&fields%5B%5D=Company&fields%5B%5D=Salary&fields%5B%5D=Application+URL&filterByFormula=%7BActive%7D%3Dtrue()&sort%5B0%5D%5Bfield%5D=Last+Modified&sort%5B0%5D%5Bdirection%5D=desc`;
 
 export type JobListing = {
 	id: string;
@@ -8,8 +8,6 @@ export type JobListing = {
 		Location: string;
 		Salary: string;
 		Company: Array<string>;
-		Active: boolean;
-		'Name (from Company)': Array<string>;
 		'Application URL': string;
 	};
 };
@@ -21,7 +19,9 @@ export const getAllJobs = async () => {
 		headers: {
 			Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
 		},
-		cache: 'default',
+		next: {
+			revalidate: 3600,
+		},
 	});
 
 	if (!res.ok) {

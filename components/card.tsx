@@ -29,7 +29,7 @@ export default async function Card({
 							height={75}
 							className="align-middle"
 						/>
-						<div>
+						<div className="pl-4">
 							<h3 className="text-lg sm:text-2xl max-w-md font-inter">
 								{role}{' '}
 							</h3>

@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-	// target: 'serverless',
 	images: {
-		domains: ['raw.githubusercontent.com', 'v5.airtableusercontent.com'],
+		remotePatterns: [
+			{
+				hostname: 'raw.githubusercontent.com',
+			},
+			{
+				hostname: 'v5.airtableusercontent.com',
+			},
+		],
 	},
 };
