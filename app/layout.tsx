@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import '../styles/globals.css';
 
 import Header from '../components/Header';
@@ -30,6 +31,10 @@ export default function RootLayout({
 					</p>
 				</footer>
 			</body>
+			<Script
+				src={`${process.env.UMAMI_URL}`}
+				data-website-id={`${process.env.UMAMI_WEBSITE_ID}`}
+			/>
 		</html>
 	);
 }
