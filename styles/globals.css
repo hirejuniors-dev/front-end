@@ -9,3 +9,17 @@
 body {
     background: whitesmoke;
 }
+
+.image-wrapper {
+    box-sizing: content-box;
+}
+
+@media (max-width: 600px) {
+    .image-wrapper {
+        box-sizing: content-box;
+        height: 50%;
+        width: 50%;
+        margin-top: 10px;
+        size: 100%;
+    }
+}
