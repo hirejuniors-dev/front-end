@@ -19,17 +19,27 @@ export default async function Card({
 	} = companyDetails.fields;
 
 	const capitalizeFirstLetter = (str) => {
-		const wordsToSkip = ['AI', 'ML', 'UX', 'UI', 'AI/ML', 'LTH', 'IT', 'IT-Techniker']; // Add more words as needed
+		const wordsToSkip = [
+			'AI',
+			'ML',
+			'UX',
+			'UI',
+			'AI/ML',
+			'LTH',
+			'IT',
+			'IT-Techniker',
+			'DB',
+		]; // Add more words as needed
 		const words = str.split(/\s+/);
-	
+
 		const capitalizedWords = words.map((word) => {
 			const isSpecialChar = /[!@#$%^&*(),.?":{}|<>-]/.test(word);
-	
+
 			return wordsToSkip.includes(word.toUpperCase()) || isSpecialChar
 				? word
 				: word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 		});
-	
+
 		return capitalizedWords.join(' ');
 	};
 
@@ -40,7 +50,7 @@ export default async function Card({
 			<div className="mb-8 p-4 sm:p-6 rounded-lg overflow-hidden shadow-lg bg-white h-auto">
 				<div className="sm:flex sm:justify-between">
 					<div className="flex content-center items-center">
-						<div className='box-content max-w-screen-sm sm:size-2/3'>
+						<div className="box-content max-w-screen-sm sm:size-2/3">
 							<Image
 								src={logoArr[0].thumbnails.large.url}
 								alt={`Logo of ${companyName}`}
