@@ -1,0 +1,125 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/Home.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Home_container__d256j {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_main__VkIEL {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_footer__yFiaX {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_footer__yFiaX img {
+  margin-left: 0.5rem;
+}
+
+.Home_footer__yFiaX a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_title__hYX6j a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.Home_title__hYX6j a:hover,
+.Home_title__hYX6j a:focus,
+.Home_title__hYX6j a:active {
+  text-decoration: underline;
+}
+
+.Home_title__hYX6j {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.Home_title__hYX6j,
+.Home_description__uXNdx {
+  text-align: center;
+}
+
+.Home_description__uXNdx {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.Home_code__VVrIr {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.Home_grid__AVljO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.Home_card__E5spL {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.Home_card__E5spL:hover,
+.Home_card__E5spL:focus,
+.Home_card__E5spL:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.Home_card__E5spL h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.Home_card__E5spL p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.Home_logo__IOQAX {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .Home_grid__AVljO {
+    width: 100%;
+    flex-direction: column;
+  }
+}

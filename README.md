@@ -1,18 +1,54 @@
-# Hire Juniors
+<div align="center">
+  <h1 align="center"><a href="https://www.epicweb.dev/epic-stack">The Epic Stack 🚀</a></h1>
+  <strong align="center">
+    Ditch analysis paralysis and start shipping Epic Web apps.
+  </strong>
+  <p>
+    This is an opinionated project starter and reference that allows teams to
+    ship their ideas to production faster and on a more stable foundation based
+    on the experience of <a href="https://kentcdodds.com">Kent C. Dodds</a> and
+    <a href="https://github.com/epicweb-dev/epic-stack/graphs/contributors">contributors</a>.
+  </p>
+</div>
 
-Looking for the first job in tech is not easy. Although there are a lot of openings out there is no central place where these postings are listed, especially for junior roles and internships. [hirejuniors.dev](https://hirejuniors.dev) is a website that aims to list all these opportunities for someone who is going to start their journey in tech. [hirejuniors.dev](https://hirejuniors.dev) aims to be a community-driven project. If you come across any job posting for a junior role or for an internship please fill-out the Typeform to get it listed.
+```sh
+npx create-epic-app@latest
+```
 
-The amount of content out there can overwhelm people who are just starting their journey. [hirejuniors.dev](https://hirejuniors.dev) aims to list all the useful resources that can help them. We will list all the useful resources that you found useful, and that you would recommend someone. If there are resources that benefited you please share them with the community.
+[![The Epic Stack](https://github-production-user-asset-6210df.s3.amazonaws.com/1500684/246885449-1b00286c-aa3d-44b2-9ef2-04f694eb3592.png)](https://www.epicweb.dev/epic-stack)
 
-Let us take a step to help and welcome junior developers on this amazing journey.
+[The Epic Stack](https://www.epicweb.dev/epic-stack)
 
-## Contributing 🚀
+<hr />
 
-We love when people contribute to the project. Refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) to learn how you can get involved.
+## Watch Kent's Introduction to The Epic Stack
 
-## Built With 💪
+[![Epic Stack Talk slide showing Flynn Rider with knives, the text "I've been around and I've got opinions" and Kent speaking in the corner](https://github-production-user-asset-6210df.s3.amazonaws.com/1500684/277818553-47158e68-4efc-43ae-a477-9d1670d4217d.png)](https://www.epicweb.dev/talks/the-epic-stack)
 
-- [Next.js](https://nextjs.org/)
-- [Strapi](https://strapi.io/)
-- [n8n](https://n8n.io)
-- [Typeform](https://typeform.com)
+["The Epic Stack" by Kent C. Dodds](https://www.epicweb.dev/talks/the-epic-stack)
+
+## Docs
+
+[Read the docs](https://github.com/epicweb-dev/epic-stack/blob/main/docs)
+(please 🙏).
+
+## Support
+
+- 🆘 Join the
+  [discussion on GitHub](https://github.com/epicweb-dev/epic-stack/discussions)
+  and the [KCD Community on Discord](https://kcd.im/discord).
+- 💡 Create an
+  [idea discussion](https://github.com/epicweb-dev/epic-stack/discussions/new?category=ideas)
+  for suggestions.
+- 🐛 Open a [GitHub issue](https://github.com/epicweb-dev/epic-stack/issues) to
+  report a bug.
+
+## Branding
+
+Want to talk about the Epic Stack in a blog post or talk? Great! Here are some
+assets you can use in your material:
+[EpicWeb.dev/brand](https://epicweb.dev/brand)
+
+## Thanks
+
+You rock 🪨
